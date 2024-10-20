@@ -105,6 +105,9 @@ h2 {
 .input-group input:focus {
     border-color: #0b1320;
 }
+.input-group input:hover {
+    background-color: #ecf1f8;
+}
 
 /* Submit button styling */
 .submit-btn {
