@@ -47,11 +47,13 @@ body {
 }
 
 /* Heading styling */
-h2 {
+h1 {
     margin-bottom: 20px;
     color: #333;
 }
-
+h2 {
+  font-family: monospace;
+}
 /* Button styling */
 .login-btn, .create-account-btn {
     background-color: #0b1320;
