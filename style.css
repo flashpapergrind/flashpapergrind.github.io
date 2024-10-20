@@ -128,8 +128,10 @@
   /* Mobile Responsiveness */
   @media (max-width: 600px) {
     .login-modal {
-      width: 95%;
-      padding: 15px;
+      width: 100%;    /* Set modal width to 100% for mobile */
+      padding: 15px;  /* Adjust padding */
+      margin: 0;      /* Remove margin */
+      min-height: 70vh; /* Set a minimum height for the modal */
     }
   
     .logo-container img {
