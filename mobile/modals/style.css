@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0b1320; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Modal container */
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Modal box styling */
+.login-modal {
+    background-color: #fff;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;   /* Base width */
+    max-width: 400px; /* Maximum width */
+    text-align: center;
+    position: relative;
+}
+
+/* Logo container styling */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto; /* Responsive height */
+    max-height: 150px; /* Limit logo height */
+    border-radius: 20px;
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Button styling */
+.login-btn, .create-account-btn {
+    background-color: #0b1320;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 0; /* Space between buttons */
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover, .create-account-btn:hover {
+    background-color: #1a2d4c;
+}
+
+/* Drawer styling */
+.drawer {
+    max-height: 0; /* Start collapsed */
+    overflow: hidden; /* Hide overflow for transition */
+    margin-top: 20px;
+    transition: max-height 0.5s ease; /* Slide transition */
+}
+
+/* Input field styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #0b1320;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5b52db;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .login-modal {
+        width: 95%; /* Modal width */
+        padding: 20px; /* Padding */
+    }
+
+    .logo-container img {
+        max-height: 120px; /* Keep logo height reasonable */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+}
