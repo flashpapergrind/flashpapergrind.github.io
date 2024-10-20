@@ -30,10 +30,11 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 90%;
-    max-width: 400px;
+    width: 90%;   /* Base width */
+    max-width: 400px; /* Maximum width */
     text-align: center;
     position: relative;
+    margin: 0 auto; /* Center the modal */
   }
   
   /* Full-width Logo container styling without padding */
@@ -43,7 +44,8 @@
   
   .logo-container img {
     width: 100%;
-    height: 150px;
+    height: auto; /* Allow for responsive height */
+    max-height: 150px; /* Keep the logo within bounds */
     border-radius: 15px;
     object-fit: cover;
     margin: 0;
@@ -128,32 +130,32 @@
   /* Mobile Responsiveness */
   @media (max-width: 600px) {
     .login-modal {
-      width: 100%;    /* Set modal width to 100% for mobile */
-      padding: 15px;  /* Adjust padding */
-      margin: 0;      /* Remove margin */
-      min-height: 70vh; /* Set a minimum height for the modal */
+      width: 95%;       /* Modal width */
+      padding: 20px;    /* Padding */
+      min-height: 70vh; /* Ensure height is adequate */
+      margin: 0;        /* Remove any margins */
     }
   
     .logo-container img {
-      height: 120px; /* Reduce logo height for smaller screens */
+      max-height: 120px; /* Keep logo height reasonable */
     }
   
     h2 {
-      font-size: 18px; /* Adjust heading size */
+      font-size: 18px;   /* Adjust heading size */
     }
   
     .input-group input {
-      padding: 8px;
-      font-size: 14px; /* Adjust input size */
+      padding: 10px;
+      font-size: 14px;   /* Adjust input size */
     }
   
     .login-btn {
-      font-size: 14px; /* Adjust button size */
+      font-size: 14px;   /* Adjust button size */
       padding: 10px;
     }
   
     .disclaimer {
-      font-size: 11px; /* Adjust disclaimer size */
+      font-size: 11px;   /* Adjust disclaimer size */
     }
   }
   
