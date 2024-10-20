@@ -108,7 +108,7 @@ h2 {
 
 /* Submit button styling */
 .submit-btn {
-    background-color: #6c63ff;
+    background-color: #0b1320;
     color: white;
     padding: 12px;
     border: none;
@@ -120,7 +120,7 @@ h2 {
 }
 
 .submit-btn:hover {
-    background-color: #5b52db;
+    background-color: #142239;
 }
 
 /* Mobile Responsiveness */
