@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden; /* Prevents scrolling on small screens */
   }
   
   /* Modal container centering */
@@ -21,7 +22,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    position: relative;
   }
   
   /* Modal box styling */
@@ -30,11 +30,10 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 90%;   /* Base width */
+    width: 90%; /* Base width */
     max-width: 400px; /* Maximum width */
     text-align: center;
     position: relative;
-    margin: 0 auto; /* Center the modal */
   }
   
   /* Full-width Logo container styling without padding */
@@ -44,12 +43,10 @@
   
   .logo-container img {
     width: 100%;
-    height: auto; /* Allow for responsive height */
+    height: auto; /* Responsive height */
     max-height: 150px; /* Keep the logo within bounds */
     border-radius: 15px;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
   }
   
   /* Modal title styling */
@@ -73,7 +70,7 @@
   
   .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Increased padding for better touch area */
     border-radius: 10px;
     border: 1px solid #ddd;
     font-size: 16px;
@@ -93,7 +90,7 @@
   .login-btn {
     background-color: #0b1320;
     color: white;
-    padding: 10px 20px;
+    padding: 12px; /* Increased padding for better touch area */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -122,18 +119,13 @@
     text-decoration: underline;
   }
   
-  /* Soft background for the page */
-  body {
-    background-color: #0b1320;
-  }
-  
   /* Mobile Responsiveness */
   @media (max-width: 600px) {
     .login-modal {
-      width: 95%;       /* Modal width */
-      padding: 20px;    /* Padding */
+      width: 95%; /* Modal width */
+      padding: 20px; /* Padding */
       min-height: 70vh; /* Ensure height is adequate */
-      margin: 0;        /* Remove any margins */
+      margin: 0; /* Remove any margins */
     }
   
     .logo-container img {
@@ -141,21 +133,21 @@
     }
   
     h2 {
-      font-size: 18px;   /* Adjust heading size */
+      font-size: 20px; /* Adjust heading size */
     }
   
     .input-group input {
       padding: 10px;
-      font-size: 14px;   /* Adjust input size */
+      font-size: 16px; /* Adjust input size */
     }
   
     .login-btn {
-      font-size: 14px;   /* Adjust button size */
-      padding: 10px;
+      font-size: 16px; /* Adjust button size */
+      padding: 12px;
     }
   
     .disclaimer {
-      font-size: 11px;   /* Adjust disclaimer size */
+      font-size: 11px; /* Adjust disclaimer size */
     }
   }
   
