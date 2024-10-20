@@ -125,3 +125,33 @@
     background-color: #0b1320;
   }
   
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .login-modal {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .logo-container img {
+      height: 120px; /* Reduce logo height for smaller screens */
+    }
+  
+    h2 {
+      font-size: 18px; /* Adjust heading size */
+    }
+  
+    .input-group input {
+      padding: 8px;
+      font-size: 14px; /* Adjust input size */
+    }
+  
+    .login-btn {
+      font-size: 14px; /* Adjust button size */
+      padding: 10px;
+    }
+  
+    .disclaimer {
+      font-size: 11px; /* Adjust disclaimer size */
+    }
+  }
+  
