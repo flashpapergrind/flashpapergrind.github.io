@@ -4,72 +4,72 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  }
-  
-  body {
+}
+
+body {
     background-color: #f0f4f8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  /* Modal container centering */
-  .login-modal-container {
+}
+
+/* Modal container centering */
+.login-modal-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     position: relative;
-  }
-  
-  /* Modal box styling */
-  .login-modal {
+}
+
+/* Modal box styling */
+.login-modal {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 90%;
+    width: 90%;  /* Adjust for mobile view */
     max-width: 400px;
     text-align: center;
     position: relative;
-  }
-  
-  /* Full-width Logo container styling without padding */
-  .logo-container {
-    margin-bottom: 20px;
-  }
-  
-  .logo-container img {
-    width: 100%;
-    height: 150px;
-    border-radius: 15px;
-    object-fit: cover;
+}
+
+/* Full-width Logo container without padding or white space */
+.logo-container {
     margin: 0;
-    padding: 0;
-  }
-  
-  /* Modal title styling */
-  h2 {
+    width: 100%;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Modal title styling */
+h2 {
     margin-bottom: 20px;
     color: #333;
-  }
-  
-  /* Input field styling */
-  .input-group {
+}
+
+/* Input field styling */
+.input-group {
     margin-bottom: 15px;
     text-align: left;
-  }
-  
-  .input-group label {
+}
+
+.input-group label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
     color: #555;
-  }
-  
-  .input-group input {
+}
+
+.input-group input {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -78,18 +78,15 @@
     outline: none;
     background-color: #f9f9f9;
     transition: border-color 0.3s ease;
-  }
-  
-  .input-group input:focus {
-    border-color: #0b1320;
-  }
-  .input-group input:hover {
-    background-color: #ecf1f8;
-  }
-  
-  /* Button styling */
-  .login-btn {
-    background-color: #0b1320;
+}
+
+.input-group input:focus {
+    border-color: #a3bffa;
+}
+
+/* Button styling */
+.login-btn {
+    background-color: #6C63FF;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -98,30 +95,51 @@
     font-size: 16px;
     width: 100%;
     transition: background-color 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background-color: #1a2d4c;
-  }
-  
-  /* Disclaimer section styling */
-  .disclaimer {
+}
+
+.login-btn:hover {
+    background-color: #5753d8;
+}
+
+/* Disclaimer section styling */
+.disclaimer {
     margin-top: 20px;
     font-size: 12px;
     color: #888;
-  }
-  
-  .disclaimer a {
-    color: #6c63ff;
+}
+
+.disclaimer a {
+    color: #6C63FF;
     text-decoration: none;
-  }
-  
-  .disclaimer a:hover {
+}
+
+.disclaimer a:hover {
     text-decoration: underline;
-  }
-  
-  /* Soft background for the page */
-  body {
-    background-color: #0b1320;
-  }
-  
+}
+
+/* Soft background for the page */
+body {
+    background-color: #E5E7EB;
+}
+
+/* Media Query for Mobile Optimization */
+@media (max-width: 600px) {
+    .login-modal {
+        width: 95%;  /* Adjust to fill more space on mobile */
+        padding: 15px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 10px 15px;  /* Adjust button size */
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 14px;  /* Adjust input padding and font size */
+    }
+
+    h2 {
+        font-size: 20px;  /* Reduce title size for mobile */
+    }
+}
